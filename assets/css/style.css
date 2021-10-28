@@ -14,14 +14,17 @@ body {
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 header h1 {
+    outline: red solid 3px;
     font-weight: bold;
     font-size: 36pt;
     color: #fce138;
     margin: 0;
-    display: inline;
 }
 
 header a {
@@ -30,18 +33,23 @@ header a {
 }
 
 header nav {
-    float: right;
+    display: flex; /* CAUTION: Added on my own */
+    outline: red solid 3px;
     margin: 7px 0;
 }
 
-header nav ul li {
-    display: inline;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav ul li a {
+    outline: blue solid 1px;
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.55vw;
 }
 
 footer {
